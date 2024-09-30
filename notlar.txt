@@ -1,0 +1,36 @@
+Playwright : 
+
+Installation: 
+
+** Node. js zaten şart :D
+
+** npm init playwright@latest
+
+
+Executions:
+
+npx playwright test  ———( runs all tests on browser in headless mode )
+npx playwright test —headed   ——  ( runs all tests on browser in headed mode )
+npx playwright show-report  ——— ( raporu gösteriyor)
+
+npx playwright test tests/HomePage.spec.js ——( runs a  specific test file )
+
+npx playwright test tests/HomePage.spec.js --headed --debug    ———( debug modunda ve headed açıyor)
+———————————
+
+fill() ve type() input dolduruyor
+
+** await page.locator(‘locator’).fill(‘value’)
+** await page.locator(‘locator’).type(‘value’)
+
+*** await page.fill(‘locator’,  ’value’)
+*** await page.type(‘locator’,  ’value’)
+
+——————————————————
+mutiple web elements:
+
+** const elements = await page.$$(locator)
+
+————————————
+
+** npx playwright codegen   ————( open Test Generator )
