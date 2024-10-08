@@ -19,5 +19,7 @@ test('Soft Assertions', async({page}) => {
     /*Behavior: A soft assertion allows the test to continue even if it fails. 
     Instead of throwing an error, it reports the failure but continues to execute the remaining code.*/ 
 
+    await expect.soft(page).toHaveTitle('nopCommerce demo store')
+    await expect.soft(page).toHaveURL('https://demo.nopcommerce.com/')
 
 });
