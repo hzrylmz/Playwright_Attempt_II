@@ -13,7 +13,7 @@ npx playwright test  ———( runs all tests on browser in headless mode )
 npx playwright test —headed   ——  ( runs all tests on browser in headed mode )
 npx playwright show-report  ——— ( raporu gösteriyor)
 
-npx playwright test tests/HomePage.spec.js ——( runs a  specific test file )
+ ——( runs a  specific test file )
 
 npx playwright test tests/HomePage.spec.js --headed --debug    ———( debug modunda ve headed açıyor)
 ———————————
