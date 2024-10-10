@@ -17,15 +17,7 @@ npx playwright show-report  ——— ( raporu gösteriyor)
 
 npx playwright test tests/HomePage.spec.js --headed --debug    ———( debug modunda ve headed açıyor)
 ———————————
-
-fill() ve type() input dolduruyor
-
-** await page.locator(‘locator’).fill(‘value’)
-** await page.locator(‘locator’).type(‘value’)
-
-*** await page.fill(‘locator’,  ’value’)
-*** await page.type(‘locator’,  ’value’)
-
+ 
 ——————————————————
 mutiple web elements:
 
