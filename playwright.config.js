@@ -28,8 +28,8 @@ module.exports = defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
-    screenshot: {
+    trace: "on-first-retry", //on-first-retry'
+    /*screenshot: {
       mode: 'only-on-failure',
       fullPage: true,  
     },
@@ -38,7 +38,7 @@ module.exports = defineConfig({
       //size: { width: 1280, height: 720 },
       // @ts-ignore
       outputDir: 'playwright-video',
-    }
+    }*/
   },
 
   /* Configure projects for major browsers */

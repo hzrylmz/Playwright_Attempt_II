@@ -22,7 +22,13 @@ npx playwright test tests/HomePage.spec.js --headed --debug    ———( debug 
 mutiple web elements:
 
 ** const elements = await page.$$(locator)
-
 ————————————
 
 ** npx playwright codegen   ————( open Test Generator )
+
+-------------
+trace :
+*** npx playwright show-trace test-results/Tracing-Tracing-chromium/trace.zip
+
+trace.zip in relative path ini ekliyoruz
+
