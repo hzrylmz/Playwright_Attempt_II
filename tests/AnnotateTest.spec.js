@@ -9,7 +9,7 @@ test('test login page',{tag:'@smoke'}, {
   await page.goto('https://www.saucedemo.com/');
 });
 
-import { test, expect } from '@playwright/test';
+
 
 test.describe('report tests', {
   annotation: { type: 'category', description: 'report' },
