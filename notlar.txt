@@ -32,3 +32,31 @@ trace :
 
 trace.zip in relative path ini ekliyoruz
 
+--------
+
+npx playwright test --ui
+
+----------
+Structure
+
+
+📦 project-root
+ ┣ 📂 tests
+ ┃ ┣ 📂 e2e
+ ┃ ┃ ┗ 📜 login.test.js          # Login testi gibi uçtan uca (end-to-end) testler
+ ┃ ┗ 📂 integration
+ ┃ ┃ ┗ 📜 product.test.js        # Modüler veya daha küçük birimler için testler
+ ┣ 📂 pages
+ ┃ ┗ 📜 LoginPage.js             # Sayfa nesneleri için sınıflar (Page Object Model)
+ ┣ 📂 fixtures
+ ┃ ┗ 📜 test-data.json           # Test verileri (örneğin kullanıcı adları, şifreler)
+ ┣ 📂 utils
+ ┃ ┣ 📜 helpers.js               # Yardımcı fonksiyonlar (örneğin, tekrar eden işlemler)
+ ┃ ┗ 📜 custom-commands.js       # Özel Playwright komutları (eğer gerekiyorsa)
+ ┣ 📂 reports
+ ┃ ┗ 📜 test-results.html        # Test sonuç raporları (allure, html-reporter, vs.)
+ ┣ 📂 config
+ ┃ ┗ 📜 playwright.config.js     # Playwright yapılandırma dosyası
+ ┣ 📂 screenshots
+ ┃ ┗ 📜 failed-test.png          # Hata alan testlerin ekran görüntüleri (otomatik)
+ ┗ 📜 package.json               # NPM bağımlılıkları ve script'ler
