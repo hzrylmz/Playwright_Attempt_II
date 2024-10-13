@@ -5,6 +5,8 @@ test('Soft Assertions', async({page}) => {
     
     await page.goto('https://demo.nopcommerce.com/')
 
+    await page.waitForTimeout(5000)
+
 
     // Hard Assertions
     /* Behavior: A hard assertion immediately stops the test execution if it fails and throws an error. 

@@ -60,3 +60,10 @@ Structure
  ┣ 📂 screenshots
  ┃ ┗ 📜 failed-test.png          # Hata alan testlerin ekran görüntüleri (otomatik)
  ┗ 📜 package.json               # NPM bağımlılıkları ve script'ler
+
+
+
+
+
+retries: 3: Tüm test ortamlarında (CI veya yerel) başarısız testleri 3 kez tekrar çalıştırır.
+retries: process.env.CI ? 2 : 0: CI ortamında başarısız testleri 2 kez tekrar çalıştırır, yerel ortamda yeniden deneme yapmaz.
